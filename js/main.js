@@ -15,8 +15,31 @@ const coloreUtente = "rosso";
 titleElement.addEventListener("click", function () {
     //la funzione VERRA' eseguita SE/QUANDO si verifica un click
     //in quel momento verrà letto il valore corrente di classeColore
-    titleElement.classList = classeColore;
-    // this.classList = classeColore;
+
+    // passa da colore normale a quello desiderato (manualmente)
+    // if (titleElement.classList.contains(classeColore)) {
+    //     titleElement.classList.remove(classeColore);
+    // } else {
+    //     titleElement.classList.add(classeColore);
+    // }
+
+    // passa da colore normale a quello desiderato (toggle)
+    // titleElement.classList.toggle(classeColore);
+
+    //se l'elemento è rosso, diventa verde - o viceversa
+    // if (titleElement.classList.contains("text-red")) {
+    //     titleElement.classList.remove("text-red");
+    //     titleElement.classList.add("text-green");
+    // } else {
+    //     titleElement.classList.add("text-red");
+    //     titleElement.classList.remove("text-green");
+    // }
+
+    //switcha lo stato di entrambe le classi, quindi
+    //SE inizialmente esiste solo una delle due classi
+    //switcha tra una classe e l'altra
+    titleElement.classList.toggle("text-red");
+    titleElement.classList.toggle("text-green");
 });
 
 subtitleElement.addEventListener("mouseover", function () {
