@@ -64,3 +64,16 @@ if (nomeUtente) {
 welcomeMsgElement.innerHTML = msg;
 // welcomeMsgElement.style.color = coloreInglese;
 welcomeMsgElement.classList = classeColore;
+
+/*********************************************/
+
+
+let contenuto = ``;
+
+for (let n = 1; n <= 23; n++) {
+
+    contenuto += `<div class="box">${n}</div>`;
+
+}
+
+document.querySelector("#scatole").innerHTML = contenuto;
