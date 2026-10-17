@@ -22,3 +22,15 @@ body {
 img {
     width: 12rem;
 }
+
+.text-green {
+    color: lime;
+}
+
+.text-red {
+    color: crimson;
+}
+
+.text-gray {
+    color: gray;
+}
